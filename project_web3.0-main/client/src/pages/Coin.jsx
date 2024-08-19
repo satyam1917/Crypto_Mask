@@ -64,7 +64,7 @@ function Coin() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {!error && !loading && coin.id ? (
         <>
           <div className="grey-wrapper">

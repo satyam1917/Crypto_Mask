@@ -10,6 +10,16 @@
   box-sizing: border-box;
 }
 
+:root{
+  --white: #fff;
+  --black: #111;
+  --grey: #888;
+  --dark-grey: #1b1b1b;
+  --blue: #3a80e9;
+  --green: #61c96f;
+  --red: #f94141;
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;

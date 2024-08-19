@@ -1,18 +1,25 @@
-import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
-import Dashboard from "./pages/Dashboard.jsx";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from "./pages/Home.jsx";
+import Coin from "./pages/Coin.jsx";
 
-const App = () => (
-  <div className="min-h-screen">
-    <div className="gradient-bg-welcome">
-      <Navbar />
-      <Welcome />
-    </div>
-    <Services />
-    <Transactions />
-    <Footer />
-    <Dashboard/>
+const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />
+    },
+    {
+      path: "/coin/:id",
+      element: <Coin />
+    },
+  ])
+  return (
+    <>
+      
+      <RouterProvider router={router} />
 
-  </div>
-);
+    </>
+  )
+};
 
 export default App;

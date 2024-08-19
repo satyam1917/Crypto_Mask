@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
-      <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
+      {/* <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Market", "Tips and Tricks", "Exchange", "Wallets"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
@@ -41,8 +41,8 @@ const Navbar = () => {
               (item, index) => <NavBarItem key={item + index} title={item} classprops="my-2 text-lg" />,
             )}
           </ul>
-        )}
-      </div>
+        )} */}
+      {/* </div> */}
     </nav>
   );
 };

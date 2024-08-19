@@ -8,6 +8,7 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
     <div className={`w-12 h-12 flex items-center justify-center rounded-full text-white bg-opacity-80 ${color}`}>
       {icon}
     </div>
+    kjhcsic
     <div className="ml-5 flex flex-col flex-1">
       <h3 className="mt-2 text-xl font-semibold text-white">{title}</h3>
       <p className="mt-2 text-gray-400 text-sm md:w-10/12">
