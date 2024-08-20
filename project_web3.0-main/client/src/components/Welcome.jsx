@@ -22,9 +22,9 @@ const WelcomePage = () => {
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo, amount, keyword, message } = formData;
+    const { addressTo, amount } = formData;
     e.preventDefault();
-    if (!addressTo || !amount || !keyword || !message) return;
+    if (!addressTo || !amount ) return;
     sendTransaction();
   };
 
@@ -33,10 +33,10 @@ const WelcomePage = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
-            Digital Currency: Empowering <br /> the Future of Finance
+            Crypto MASK:  <br /> the Future of Finance
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            Embark on a journey into the world of digital currency. Seamlessly trade cryptocurrencies on our platform.
+            Send Ethereum to anyone, anywhere in the world. 
           </p>
           {!currentAccount && (
             <button
@@ -74,8 +74,7 @@ const WelcomePage = () => {
           <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
             <CustomInput placeholder="Recipient's Address:" name="addressTo" type="text" handleChange={handleChange} />
             <CustomInput placeholder="Amount in ETH" name="amount" type="number" handleChange={handleChange} />
-            <CustomInput placeholder="Keyword" name="keyword" type="text" handleChange={handleChange} />
-            <CustomInput placeholder="Your Message:" name="message" type="text" handleChange={handleChange} />
+
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
 
@@ -85,7 +84,7 @@ const WelcomePage = () => {
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+                  className="text-white w-full mt-2 border-[1px] p-2 border-[#ffffff] hover:bg-[#ff0081] rounded-full cursor-pointer"
                 >
                   Initiate Transfer
                 </button>
