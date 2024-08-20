@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div className="footer">
       <h2 className="logo" onClick={() => topFunction()}>
-        CryptoTracker<span>.</span>
+        Crypto MASK<span>.</span>
       </h2>
       <div className="social-links">
         <a href="https://www.facebook.com/profile.php?id=100085217108669">
