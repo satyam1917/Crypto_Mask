@@ -3,6 +3,7 @@ import Button from "../Button";
 import TemporaryDrawer from "./drawer";
 import "./styles.css";
 import Switch from "@mui/material/Switch";
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -45,19 +46,13 @@ function Header() {
       </h1>
       <div className="links">
         <Switch checked={darkMode} onClick={() => changeMode()} />
-        <a href="/">
+        <Link to="/">
           <p className="link">Home</p>
-        </a>
-        <a href="/compare">
-          <p className="link">Compare</p>
-        </a>
+        </Link>
         
-        <a href="/watchlist">
+        <Link to="/watchlist">
           <p className="link">Watchlist</p>
-        </a>
-        <a href="/dashboard">
-          <Button text={"dashboard"} />
-        </a>
+        </Link>
       </div>
       <div className="drawer-component">
         <TemporaryDrawer />
